@@ -9,4 +9,3 @@ Follow this format please for major stuff
 11/19 10:16pm:   The replication of the main page is good
 
 11/19 10:27pm:   The replication of the announcements is ok, the font is messed up, i think it will fix itself when the code gets transferred
-

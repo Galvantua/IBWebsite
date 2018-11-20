@@ -262,15 +262,15 @@
 			value11: document.getElementById("close11"),
 			value12: document.getElementById("close12"),
 		}
-		btn[1].onclick = function() {
+		btn[10].onclick = function() {
 			modal.style.display = "block";
 		}
-		span.onclick = function() {
+		close[10].onclick = function() {
     		modal.style.display = "none";
 		}
 		window.onclick = function(event) {
-    		if (event.target == modal) {
-        		modal.style.display = "none";
+    		if (event.target == mdl[10]) {
+        		mdl[10].style.display = "none";
     		}
 		}
 	</script>

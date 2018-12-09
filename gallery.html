@@ -226,7 +226,7 @@
 		</table>
 	<div id="modal">
 		<div id="modal-content">
-			<span id="close" style="color: rgb(31, 31, 31); float: right; font-size: 28px; font-weight: bold;">&times;</span>
+			<span id="close" onclick="close()" style="color: rgb(31, 31, 31); float: right; font-size: 28px; font-weight: bold;">&times;</span>
 
 			<p id="actual-modal-content">
 				CONTENT0
@@ -291,6 +291,16 @@
 			actualmodalcontent.innerHTML = "CONTENT12"
 			modal.style.display = "block";
 		};
+		function close () {
+			modal.style.display = "none"
+		};
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		};
+		
+
 		/*
 		//set 1
 		var mdl1 = document.getElementById('mdl1');

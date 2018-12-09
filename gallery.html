@@ -32,7 +32,7 @@
 			<tr>
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn1">
+					<input type="image" src="" alt="ib-image" id="btn1" onclick="modal1()">
 
 					
 					<!-- The Modal -->
@@ -48,7 +48,7 @@
 
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn2">
+					<input type="image" src="" alt="ib-image" id="btn2" onclick="modal2()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl2" class="modal">
@@ -63,7 +63,7 @@
 
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn3">
+					<input type="image" src="" alt="ib-image" id="btn3" onclick="modal3()">
 		
 					<!-- The Modal -->
 				<!--	<div id="mdl3" class="modal">
@@ -78,7 +78,7 @@
 
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn4">
+					<input type="image" src="" alt="ib-image" id="btn4" onclick="modal4()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl4" class="modal">
@@ -95,7 +95,7 @@
 			<tr>
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn5">
+					<input type="image" src="" alt="ib-image" id="btn5" onclick="modal5()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl5" class="modal">
@@ -111,7 +111,7 @@
 
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn6">
+					<input type="image" src="" alt="ib-image" id="btn6" onclick="modal6()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl6" class="modal">
@@ -127,7 +127,7 @@
 				
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn7">
+					<input type="image" src="" alt="ib-image" id="btn7" onclick="modal7()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl7" class="modal">
@@ -143,7 +143,7 @@
 				
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn8">
+					<input type="image" src="" alt="ib-image" id="btn8" onclick="modal8()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl8" class="modal">
@@ -161,7 +161,7 @@
 			<tr>
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn9">
+					<input type="image" src="" alt="ib-image" id="btn9" onclick="modal9()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl9" class="modal">
@@ -177,7 +177,7 @@
 				
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image"  id="btn10">
+					<input type="image" src="" alt="ib-image"  id="btn10" onclick="modal10()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl10" class="modal">
@@ -193,7 +193,7 @@
 				
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn11">
+					<input type="image" src="" alt="ib-image" id="btn11" onclick="modal11()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl11" class="modal">
@@ -209,7 +209,7 @@
 				
 				<td>
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
-					<input type="image" src="" alt="ib-image" id="btn12">
+					<input type="image" src="" alt="ib-image" id="btn12" onclick="modal12()">
 	
 					<!-- The Modal -->
 				<!--	<div id="mdl12" class="modal">
@@ -224,23 +224,78 @@
 				</td>
 			</tr>
 		</table>
+	<div id="modal">
+		<div id="modal-content">
+			<span id="close" style="color: rgb(31, 31, 31); float: right; font-size: 28px; font-weight: bold;">&times;</span>
+
+			<p id="actual-modal-content">
+				CONTENT0
+			</p>
+		</div>
+	</div>
+	
 	</div>
 	</div>
+
+
+
+
 	<script>
-	/*	function stylemodals () {
-			var modalarray = document.body.getElementsByClassName("modal");
-			for ( var i = 0; i < modalarray.length; i++) {
-				modalarray[i].setAttribute("style", "display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; color: black; overflow: auto; background-color: rgba(0, 0, 0, .4); ");
-			}
-		}
-		stylemodals ();
-		function stylemodalcontent () {
-			var modalcontentarray = document.body.getElementsByClassName("modal-content");
-			for ( var i = 0; i < modalcontentarray.length; i++) {
-				modalcontentarray[i].setAttribute("style", "background-color: #FFFFFF; margin: 15% auto; border: 1px solid #888; width: 70%;");
-			}
-		}
-		stylemodalcontent();
+		var modal = document.getElementByid("modal");
+		modal.setAttribute("style", "display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; color: black; overflow: auto; background-color: rgba(0, 0, 0, .4); ");
+		
+		document.getElementById("modal-content").setAttribute("style", "background-color: #FFFFFF; margin: 15% auto; border: 1px solid #888; width: 70%;");
+		
+		var actualmodalcontent = document.getElementById("actual-modal-content");
+		function modal1 (){
+			actualmodalcontent.innerHTML = "CONTENT1"
+			modal.style.display = "block";
+		};
+		function modal2 (){
+			actualmodalcontent.innerHTML = "CONTENT2"
+			modal.style.display = "block";
+		};
+		function modal3 (){
+			actualmodalcontent.innerHTML = "CONTENT3"
+			modal.style.display = "block";
+		};
+		function modal4 (){
+			actualmodalcontent.innerHTML = "CONTENT4"
+			modal.style.display = "block";
+		};
+		function modal5 (){
+			actualmodalcontent.innerHTML = "CONTENT5"
+			modal.style.display = "block";
+		};
+		function modal6 (){
+			actualmodalcontent.innerHTML = "CONTENT6"
+			modal.style.display = "block";
+		};
+		function modal7 (){
+			actualmodalcontent.innerHTML = "CONTENT7"
+			modal.style.display = "block";
+		};
+		function modal8 (){
+			actualmodalcontent.innerHTML = "CONTENT8"
+			modal.style.display = "block";
+		};
+		function modal9 (){
+			actualmodalcontent.innerHTML = "CONTENT9"
+			modal.style.display = "block";
+		};
+		function modal10 (){
+			actualmodalcontent.innerHTML = "CONTENT10"
+			modal.style.display = "block";
+		};
+		function modal11 (){
+			actualmodalcontent.innerHTML = "CONTENT11"
+			modal.style.display = "block";
+		};
+		function modal12 (){
+			actualmodalcontent.innerHTML = "CONTENT12"
+			modal.style.display = "block";
+		};
+		/*
 		//set 1
 		var mdl1 = document.getElementById('mdl1');
 		var btn1 = document.getElementById("btn1");

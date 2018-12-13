@@ -21,6 +21,7 @@
 				Date Published: 1/1/1 <!--move inline-->
 			</h3>
 		</div>
+
 		<div id="lettertitle">
 			<h2>
 				Sample Letter Title
@@ -35,9 +36,12 @@
 		</article>
 
 		<script>
-
 			var pagetitle = document.getElementById(pagetitle);
 			pagetitle.setAttribute("style", "color: rgb(0,0,0);");
+			var author = document.getElementById(author);
+			author.setAttribute("style", "position: relative; display: inline-block;");
+			var date = document.getElementById(date);
+			date.setAttribute("style", "position: relative; display: inline-block;");
 		</script>
 	</body>
 </html>

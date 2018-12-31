@@ -74,19 +74,19 @@
 		<h2 class="bottom">
 			Veritatis dolore dolor esse, ipsum quod quibusdam dolores natus autem qui quidem totam, vero rem mollitia magni vel assumenda optio? Molestiae esse molestias reiciendis voluptatem atque, explicabo deleniti voluptatibus necessitatibus.
 		</h2>
-		<h2 class="bottom">
+		<h2 class="bottom" style="">
 			Illo accusamus id ipsam odit unde fuga neque, libero deleniti, doloremque praesentium hic est suscipit magni quo, nulla facere perspiciatis atque? Similique cupiditate optio reprehenderit corporis nemo! Magnam, non iusto!
 		</h2>
 	</div>
 	</div>
 	<script>
-		var allheaders = document.getElementsByClassName("top", "bottom");
-		for (i = 0; i < allheaders.length; i++) {
-			allheaders[i].setAttribute("style", "color: lightblue; font-size: 2em;")
+		var top = document.getElementsByClassName("top");
+		for (i = 0; i < top.length; i++) {
+			top[i].setAttribute("style", "color: rgb(0, 38, 255); font-size: 2em; font-weight: bold;");
 		}
 		var bottom = document.getElementsByClassName("bottom");
-		for (i = 0; i < allheaders.length; i++) {
-			allheaders[i].bold();
+		for (i = 0; i < bottom.length; i++) {
+			bottom[i].setAttribute("style", "color: rgb(0, 38, 255); font-size: 2em;");
 		}
 	</script>
 </body>

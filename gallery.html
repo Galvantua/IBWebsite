@@ -29,66 +29,66 @@
 	<div id="mainwrapper">
 	<div id="main">
 		<table width=100%>
-			<tr>
-				<td>
+			<tr class="image-rows">
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="airplane test" id="btn1" onclick="modal1()" class="images">
 				</td>
 
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" alt="ib-image" id="btn2" onclick="modal2()" class="images">
 				</td>
 
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/baboon.png" alt="ib-image" id="btn3" onclick="modal3()" class="images">
 				</td>
 
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/barbara.png" alt="ib-image" id="btn4" onclick="modal4()" class="images">
 			</tr>
 
-			<tr>
-				<td>
+			<tr class="image-rows">
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/boat.png" alt="ib-image" id="btn5" onclick="modal5()" class="images">
 				</td>
 
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/watch.png" alt="ib-image" id="btn6" onclick="modal6()" class="images">
 				</td>
 				
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/cat.png" alt="ib-image" id="btn7" onclick="modal7()" class="images">
 				</td>
 				
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/fruits.png" alt="ib-image" id="btn8" onclick="modal8()" class="images">
 				</td>
 			</tr>
 
-			<tr>
-				<td>
+			<tr class="image-rows">
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/girl.png" alt="ib-image" id="btn9" onclick="modal9()" class="images">
 				</td>
 				
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/monarch.png" alt="ib-image"  id="btn10" onclick="modal10()" class="images">
 				</td>
 				
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/pool.png" alt="ib-image" id="btn11" onclick="modal11()" class="images">
 				</td>
 				
-				<td>
+				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/zelda.png" alt="ib-image" id="btn12" onclick="modal12()" class="images">
 				</td>
@@ -174,7 +174,17 @@
 
 		var images = document.getElementsByClassName("images");
 		for (i = 0; i < images.length; i++) {
-			images[i].style.width = "20%"
+			images[i].style.width = "100%"
+		}
+
+		var imagecells = document.getElementsByClassName("image-cells");
+		for (i = 0; i < images.length; i++) {
+			imagecells[i].style.width = "25%"
+		}
+
+		var imagerows = document.getElementsByClassName("image-rows");
+		for (i = 0; i < images.length; i++) {
+			imagerows[i].style.width = "100%"
 		}
 	</script>
 </body>

@@ -44,23 +44,18 @@
 		
 		<h2 class="top">
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, error modi nam earum deleniti vel sed laudantium ex nihil repellat porro doloremque, ducimus ab maiores a saepe eveniet assumenda debitis.
-
 		</h2>
 		<h2 class="top">
 			Facere animi sunt temporibus dignissimos reprehenderit libero vel id hic vero culpa, corporis labore quos placeat quae quam a eos iusto laboriosam beatae nam. Consectetur iure nihil necessitatibus recusandae laudantium?
-
 		</h2>
 		<h2 class="top">
 			Culpa id cum omnis sed! Accusantium nesciunt obcaecati ullam! Placeat distinctio nihil facilis quidem ipsum, veritatis laboriosam molestiae similique optio atque illo eveniet libero ipsam ullam totam voluptatem, magnam pariatur.
-
 		</h2>
 		<h2 class="top">
 			Excepturi amet mollitia aspernatur, maxime necessitatibus, vel et cupiditate sapiente, quos tempora odio totam unde culpa accusamus. Culpa voluptatem eveniet pariatur quo molestias est ipsum, tempore dolorem accusamus incidunt distinctio.
-
 		</h2>
 		<h2 class="top">
 			Ex architecto vero enim, suscipit aliquid harum. Facere delectus quis harum ipsa. Unde perferendis necessitatibus nesciunt, corrupti doloremque, rem animi accusantium, quia eius nam facilis voluptatum. Velit esse atque eaque.
-
 		</h2>
 		<h2 class="bottom">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quia vero quo ducimus accusamus cum doloribus officiis aliquid autem blanditiis, molestias nulla voluptas excepturi iste totam rerum nobis voluptatem minima.
@@ -74,7 +69,7 @@
 		<h2 class="bottom">
 			Veritatis dolore dolor esse, ipsum quod quibusdam dolores natus autem qui quidem totam, vero rem mollitia magni vel assumenda optio? Molestiae esse molestias reiciendis voluptatem atque, explicabo deleniti voluptatibus necessitatibus.
 		</h2>
-		<h2 class="bottom" style="">
+		<h2 class="bottom">
 			Illo accusamus id ipsam odit unde fuga neque, libero deleniti, doloremque praesentium hic est suscipit magni quo, nulla facere perspiciatis atque? Similique cupiditate optio reprehenderit corporis nemo! Magnam, non iusto!
 		</h2>
 	</div>
@@ -82,7 +77,9 @@
 	<script>
 		var top = document.getElementsByClassName("top");
 		for (i = 0; i < top.length; i++) {
-			top[i].setAttribute("style", "color: rgb(0, 38, 255); font-size: 2em; font-weight: bold;");
+			top[i].style.color = "color: rgb(0, 38, 255)";
+			top[i].style.fontSize = "2em";
+			top[i].style.fontWeight = "bold";
 		}
 		var bottom = document.getElementsByClassName("bottom");
 		for (i = 0; i < bottom.length; i++) {

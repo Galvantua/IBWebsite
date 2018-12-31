@@ -179,9 +179,10 @@
 
 		var imagecells = document.getElementsByClassName("image-cells");
 		for (i = 0; i < images.length; i++) {
-			imagecells[i].style.width = "25%";
+			imagecells[i].setAttribute("style", "width: 25%; text-align: center");
+			//imagecells[i].style.width = "25%";
 			//imagecells[i].style.display = "flex";
-			imagecells[i].style.align = "center";
+			//imagecells[i].style.align = "center";
 			//imagecells[i].style.justify = "center";
 		}
 

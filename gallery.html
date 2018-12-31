@@ -174,17 +174,20 @@
 
 		var images = document.getElementsByClassName("images");
 		for (i = 0; i < images.length; i++) {
-			images[i].style.height = "250px"
+			images[i].style.height = "250px";
+			images[i].style.display = "flex";
+			images[i].style.align = "center";
+			images[i].style.justify = "center";
 		}
 
 		var imagecells = document.getElementsByClassName("image-cells");
 		for (i = 0; i < images.length; i++) {
-			imagecells[i].style.width = "25%"
+			imagecells[i].style.width = "25%";
 		}
 
 		var imagerows = document.getElementsByClassName("image-rows");
 		for (i = 0; i < images.length; i++) {
-			imagerows[i].style.width = "100%"
+			imagerows[i].style.width = "100%";
 		}
 	</script>
 </body>

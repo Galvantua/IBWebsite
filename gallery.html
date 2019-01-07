@@ -26,9 +26,14 @@
 		</table>
 		NOTE: THIS MENU WILL NOT EXIST IN THE FINAL VERSION
 	</div>
-	<div id="mainwrapper">
+	
+	<nav>
+		<input type="button" value="Present CAS Projects">
+		<input type="button" value="Past CAS Projects">
+		<input type="button" value="The IB Life">
+	</nav>
 	<div id="main">
-		<table width=100%>
+		<table width=100% id="Present-CAS">
 			<tr class="image-rows">
 				<td class="image-cells">
 					<!-- Trigger/Open The Modal NEEDS AN IMAGE -->
@@ -94,17 +99,127 @@
 				</td>
 			</tr>
 		</table>
-	<div id="modal">
-		<div id="modal-content">
-			<span id="close" style="color: rgb(31, 31, 31); float: right; font-size: 28px; font-weight: bold;">&times;</span>
-
-			<p id="actual-modal-content">
-				CONTENT0
-			</p>
-		</div>
-	</div>
+		<table width=100% id="Past-CAS">
+				<tr class="image-rows">
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" alt="airplane test" id="btn13" onclick="modal13()" class="images">
+					</td>
 	
-	</div>
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="ib-image" id="btn14" onclick="modal14()" class="images">
+					</td>
+	
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/baboon.png" alt="ib-image" id="btn15" onclick="modal15()" class="images">
+					</td>
+	
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/barbara.png" alt="ib-image" id="btn16" onclick="modal16()" class="images">
+				</tr>
+	
+				<tr class="image-rows">
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/boat.png" alt="ib-image" id="btn17" onclick="modal17()" class="images">
+					</td>
+	
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/watch.png" alt="ib-image" id="btn18" onclick="modal18()" class="images">
+					</td>
+					
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/cat.png" alt="ib-image" id="btn19" onclick="modal19()" class="images">
+					</td>
+					
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/fruits.png" alt="ib-image" id="btn20" onclick="modal20()" class="images">
+					</td>
+				</tr>
+	
+				<tr class="image-rows">
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/girl.png" alt="ib-image" id="btn21" onclick="modal21()" class="images">
+					</td>
+					
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/monarch.png" alt="ib-image"  id="btn22" onclick="modal22()" class="images">
+					</td>
+					
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/pool.png" alt="ib-image" id="btn23" onclick="modal23()" class="images">
+					</td>
+					
+					<td class="image-cells">
+						<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/zelda.png" alt="ib-image" id="btn24" onclick="modal24()" class="images">
+					</td>
+				</tr>
+			</table>
+
+		</table>
+		<table width=100% id="IB-Life">
+			<tr class="image-rows">
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/zelda.png" alt="airplane test" id="btn13" onclick="modal25()" class="images">
+				</td>
+	
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" alt="ib-image" id="btn14" onclick="modal26()" class="images">
+				</td>
+
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/baboon.png" alt="ib-image" id="btn15" onclick="modal27()" class="images">
+				</td>
+	
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/barbara.png" alt="ib-image" id="btn16" onclick="modal28()" class="images">
+				</td>
+			</tr>
+
+			<tr class="image-rows">
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/boat.png" alt="ib-image" id="btn17" onclick="modal29()" class="images">
+				</td>
+
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/watch.png" alt="ib-image" id="btn18" onclick="modal30()" class="images">
+				</td>
+				
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/cat.png" alt="ib-image" id="btn19" onclick="modal31()" class="images">
+				</td>
+					
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/fruits.png" alt="ib-image" id="btn20" onclick="modal32()" class="images">
+				</td>
+			</tr>
+
+			<tr class="image-rows">
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/girl.png" alt="ib-image" id="btn21" onclick="modal33()" class="images">
+				</td>
+				
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/monarch.png" alt="ib-image"  id="btn22" onclick="modal34()" class="images">
+				</td>
+				
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/pool.png" alt="ib-image" id="btn23" onclick="modal35()" class="images">
+				</td>
+				
+				<td class="image-cells">
+					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" alt="ib-image" id="btn24" onclick="modal36()" class="images">
+				</td>
+			</tr>
+		</table>
+
+		<div id="modal">
+			<div id="modal-content">
+				<span id="close" style="color: rgb(31, 31, 31); float: right; font-size: 28px; font-weight: bold;">&times;</span>
+
+				<p id="actual-modal-content">
+					CONTENT0
+				</p>
+			</div>
+		</div>
 	</div>
 	<script>
 		var modal = document.getElementById("modal");

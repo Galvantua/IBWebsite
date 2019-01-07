@@ -89,7 +89,7 @@
 			</tr>
 		</table>
 
-		<table width="100%" id="Past-CAS" style="display: hidden;">
+		<table width="100%" id="Past-CAS" style="display: none;">
 			<tr class="image-rows">
 				<td class="image-cells">
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" alt="airplane test" id="btn13" onclick="modal13()" class="images">
@@ -145,7 +145,7 @@
 			</tr>
 		</table>
 
-		<table width="100%" id="IB-Life" style="display: hidden;">
+		<table width="100%" id="IB-Life" style="display: none;">
 			<tr class="image-rows">
 				<td class="image-cells">
 					<input type="image" src="https://homepages.cae.wisc.edu/~ece533/images/zelda.png" alt="airplane test" id="btn25" onclick="modal25()" class="images">
@@ -297,17 +297,17 @@
 		var life = document.getElementById("IB-Life");
 		function prescas() {
 			prescas.style.display = "block";
-			pastcas.style.display = "hidden";
-			life.style.display = "hidden"
+			pastcas.style.display = "none";
+			life.style.display = "none"
 		}
 		function pastcas() {
-			prescas.style.display = "hidden";
+			prescas.style.display = "none";
 			pastcas.style.display = "block";
-			life.style.display = "hidden"
+			life.style.display = "none"
 		}
 		function life() {
-			prescas.style.display = "hidden";
-			pastcas.style.display = "hidden";
+			prescas.style.display = "none";
+			pastcas.style.display = "none";
 			life.style.display = "block"
 		}
 	</script>

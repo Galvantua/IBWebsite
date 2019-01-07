@@ -28,9 +28,9 @@
 	</div>
 	
 	<nav>
-		<input type="button" value="Present CAS Projects">
-		<input type="button" value="Past CAS Projects">
-		<input type="button" value="The IB Life">
+		<input type="button" value="Present CAS Projects" onclick="prescas()">
+		<input type="button" value="Past CAS Projects" onclick="pastcas()">
+		<input type="button" value="The IB Life" onclick="life()">
 	</nav>
 	<div id="main">
 		<table width=100% id="Present-CAS" style="display: block;">
@@ -99,7 +99,7 @@
 				</td>
 			</tr>
 		</table>
-		
+
 		<table width=100% id="Past-CAS" style="display: hidden;">
 			<tr class="image-rows">
 				<td class="image-cells">
@@ -287,7 +287,6 @@
 			}
 		};
 
-
 		var images = document.getElementsByClassName("images");
 		for (i = 0; i < images.length; i++) {
 			images[i].style.height = "250px";
@@ -302,6 +301,25 @@
 		var imagerows = document.getElementsByClassName("image-rows");
 		for (i = 0; i < images.length; i++) {
 			imagerows[i].style.width = "100%";
+		}
+	
+		var prescas = document.getElementById("Present-CAS");
+		var pastcas = document.getElementById("Past-CAS");
+		var life = document.getElementById("IB-Life");
+		function prescas() {
+			prescas.style.display = "block";
+			pastcas.style.display = "hidden";
+			life.style.display = "hidden"
+		}
+		function pastcas() {
+			prescas.style.display = "hidden";
+			pastcas.style.display = "block";
+			life.style.display = "hidden"
+		}
+		function life() {
+			prescas.style.display = "hidden";
+			pastcas.style.display = "hidden";
+			life.style.display = "block"
 		}
 	</script>
 </body>

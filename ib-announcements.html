@@ -55,7 +55,7 @@
 				CONGRATULATIONS TO IB SENIOR ROBIE CARRASCOSA FOR BEING NAMED NATIONAL MERIT SCHOLAR SEMI-FINALIST.
 			</h2>
 
-			<div class="spacer" style="color:blue;">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
@@ -65,7 +65,7 @@
 				CONGRATULATIONS TO GABRIELLE WONG FOR BEING NAMED SENIOR OF THE MONTH FOR AUGUST 2018.
 			</h2>
 
-			<div class="spacer" style="color:blue;">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
@@ -135,8 +135,11 @@
 		var announcements = document.getElementsByClassName("announce");
 		announcements.setAttribute("style", "color: black; font-size: 2em");
 
-		var spacers = document.getElementsByClassName("spacers");
-		spacers.setAttribute("style", "color: blue;")
+		var spacers = document.getElementsByClass("spacer");
+
+		for (var i = 0, max = spacers.length; i < max; i++) {
+ 		   spacers[i].style.color = "blue";
+		}
 	</script>
 </body>
 </html>

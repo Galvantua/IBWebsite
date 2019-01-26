@@ -34,24 +34,24 @@
 	<div id="mainwrapper" style="text-align:center">
 		<div id="main">
 			<iframe src="https://calendar.google.com/calendar/embed?src=flaglerschools.com_ngo37ami0hgiikf4bsclhm39u0%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-			<h1 style="color:blue; text-decoration: underline">
+			<h1 class="header">
 				IB ANNOUNCEMENTS
 			</h1>
 		
-			<h2 style="color:red; font: bold;">
+			<h2 class="announce">
 				IB PINNING CEREMONY RECOGNIZING IB CLASS OF 2019 FOR ASSUMING DIPLOMA CANDIDACY LEVEL AND PRE-DIPLOMA NINTH GRADE - CLASS OF 2022 - WELCOME CELEBRATION
 				TUESDAY, 25 SEPTEMBER 2018, 6:00 P.M., FPC DINING HALL
 				<br><br>
 				PARENTS/GUARDIANS WELCOME!
 			</h2>
 
-			<div class="spacer" style="color:blue">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
 			</div>
 
-			<h2 style="color:red; font-weight: bold;">
+			<h2 class="announce">
 				CONGRATULATIONS TO IB SENIOR ROBIE CARRASCOSA FOR BEING NAMED NATIONAL MERIT SCHOLAR SEMI-FINALIST.
 			</h2>
 
@@ -61,7 +61,7 @@
 				</h2>
 			</div>
 
-			<h2 style="color:red; font-weight: bold;">
+			<h2 class="announce">
 				CONGRATULATIONS TO GABRIELLE WONG FOR BEING NAMED SENIOR OF THE MONTH FOR AUGUST 2018.
 			</h2>
 
@@ -71,17 +71,17 @@
 				</h2>
 			</div>
 
-			<h2 style="color:red; font-weight: normal;">
+			<h2 class="announce">
 				CONGRATULATIONS TO IB SCHOLAR ROBIE CARRASCOSA FOR BEING NAMED DISTRICT SUNSHINE STATE STEM SCHOLAR ALTERNATE FOR 2018
 			</h2>
 
-			<div class="spacer" style="color:blue;">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
 			</div>
 
-			<h2 style="color:red; font-weight: normal; ">
+			<h2 class="announce">
 				DONATIONS
 				<br><br>
 				The IB Diploma Program is seeking donations to help us decorate and add to the new IB wing at FPC.
@@ -92,25 +92,25 @@
 				Contact us via email at <a href="mailto:tangneyr@flaglerschools.com">tangneyr@flaglerschools.com</a>
 			</h2>
 
-			<div class="spacer" style="color:blue;">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
 			</div>
 
-			<h2 style="color:red; font-weight: normal;">
+			<h2 class="announce">
 				Creativity, Activity and Service (CAS)
 				<br><br>
 				IB juniors should be planning their CAS projects and making arrangements to meet with CAS coordinator Ms Tomko.  Please refer to CAS Guidebook and Ms Tomko's CAS site for more information.
 			</h2>
 
-			<div class="spacer" style="color:blue;">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
 			</div>
 
-			<h2 style="color: red; font-weight: normal;">
+			<h2 class="announce">
 				IB seniors and juniors are reminded that IB classes are on the A/B Block Schedule except for period 5, which runs every day.
 				<br><br>
 				A days are Monday, Wednesday and the first half of each period on Fridays. 
@@ -120,16 +120,23 @@
 				On split (A/B) Fridays, all IB seniors and juniors have first lunch.
 			</h2>
 
-			<div class="spacer" style="color:blue;">
+			<div class="spacer">
 				<h2>
 					***
 				</h2>
 			</div>
 
-			<h2 style="color:red; font-weight:normal;">
+			<h2 class="announce">
 				If you are an FPCHS IB graduate and your email address has changed, please send your new address to <a href="mailto:tangneyr@flaglerschools.com">tangneyr@flaglerschools.com</a>.
 			</h2>
 		</div>
 	</div>
+	<script>
+		var announcements = document.getElementsByClassName("announce");
+		announcements.setAttribute("style", "color: black; font-size: 2em");
+
+		var spacers = document.getElementsByClassName("spacers");
+		spacers.setAttribute("style", "color: blue;")
+	</script>
 </body>
 </html>

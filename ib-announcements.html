@@ -133,12 +133,16 @@
 	</div>
 	<script>
 		var announcements = document.getElementsByClassName("announce");
-		announcements.setAttribute("style", "color: black; font-size: 2em");
+		
+		for (var i = 0; i < announcements.length; i++) {
+			announcements[i].style.color = "black";
+			announcements[i].style.fontSize = "2em";
+		}
 
 		var spacers = document.getElementsByClass("spacer");
 
 		for (var i = 0, max = spacers.length; i < max; i++) {
- 		   spacers[i].style.color = "blue";
+ 			spacers[i].style.color = "blue";
 		}
 	</script>
 </body>
